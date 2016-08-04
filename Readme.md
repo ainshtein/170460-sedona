@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Andrej Amelichkin](https://up.htmlacademy.ru/htmlcss/14/user/170460).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Ловцевич](https://htmlacademy.ru/profile/zigzag).
 
 ---
 
