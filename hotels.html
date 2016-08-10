@@ -50,123 +50,108 @@
     </header>
 		<main class="content-main">
 			<div class="container">
-				<div class="logo">
-					<div class="logo__pic">
-						<img class="logo__pic-img" src="img/logo.png" width="458" height="352" alt="Седона логотип">
+				<div class="searching-filter">
+					<form class="hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
+						<section class="infrastructure-choices">
+							<fieldset class="infrastructure-choices__group">
+								<legend class="infrastructure-choices__title">Инфраструктура</legend>
+								<input type="checkbox" name="swimming-pool" id="swimming-pool">
+								<label for="swimming-pool">Бассейн</label>
+								<input type="checkbox" name="parking" id="parking">
+								<label for="parking">Парковка</label>
+								<input type="checkbox" name="wi-fi" id="wi-fi">
+								<label for="wi-fi">wi-fi</label>
+							</fieldset>
+						</section>
+						<section class="property-type">
+							<fieldset class="property-type__group">
+								<legend class="infrastructure-choices__title">Тип жилья</legend>
+								<input type="checkbox" name="hotel" id="hotel">
+								<label for="hotel">Гостиница</label>
+								<input type="checkbox" name="motel" id="motel">
+								<label for="motel">Мотель</label>
+								<input type="checkbox" name="apartments" id="apartments">
+								<label for="apartments">Апартаменты</label>
+							</fieldset>
+						</section>
+						<section class="cost-per-day">
+							<fieldset class="cost-per-day__group">
+								<legend class="cost-per-day__title">Стоимость в сутки (р):</legend>
+								<input type="text" name="min" id="min-price" placeholder="от 0">
+								<input type="text" name="max-price" id="max-price" placeholder="до 3000">
+								<div class="price-progress-bar">
+									<div class="price-progress-bar__line">
+										<div class="price-progress-bar__control-start"></div>
+										<div class="price-progress-bar__progress-line"></div>
+										<div class="price-progress-bar__control-finish"></div>
+									</div>
+								</div>
+								<button class="btn" type="submit">Показать</button>
+							</fieldset>
+						</section>
+					</form>
+				</div>
+				<div class="searching-results">
+					<span class="searching-results__title">Найдено: <span class="searching-results__quantity">3</span></span>
+					<div class="searching-filter">
+						<span class="searching-filter__title">Сортировка:</span>
+							<ul class="searching-filter__list">
+								<li class="searching-filter__item">
+									<a class="searching-filter__link" href="#">по цене</a>
+								</li>
+								<li class="searching-filter__item">
+									<a class="searching-filter__link" href="#">по типу</a>
+								</li>
+								<li class="searching-filter__item">
+									<a class="searching-filter__link" href="#">по рейтингу</a>
+								</li>
+							</ul>
+							<a class="ascending__link" href="#">по возрастанию</a>
+							<a class="descending__link" href="#">по убыванию</a>
 					</div>
 				</div>
-				<h1 class="title-main">
-					СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего! 
-				</h1>
-				<p class="text">
-					Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-				</p>
-				<section class="section">
-					<div class="section__left">
-						<h2 class="title-main">Настоящий городок</h2>
-						<span class="text">— №1 —</span>
-						<p class="text">
-							СЕДОНА — не атракцион для туристов, там течет своя жизнь.
-						</p>
+				<article class="house-card">
+					<div class="house-card__pic">
+						<img class="house-card__pic-img" src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
 					</div>
-					<div class="section__right">
-						<div class="section__pic">
-							<img class="section__pic-img" src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
-						</div>
+					<h2 class="house-card__title">Amara Resort &amp; Spa</h2>
+					<span class="house-card__property-type">Гостиница</span>
+					<span class="house-card__price">от 3500 р.</span>
+					<a class="btn btn_more" href="#" class="btn">Подробнее</a>
+					<a class="btn btn_reserve" href="#" class="btn">Забронировать</a>
+					<div class="rating">
+						<span class="rating__point-star"></span>
+						<span class="rating__point-number">Рейтинг: 8,5</span>
 					</div>
-				</section>
-				<section class="features">
-					<div class="features-block">
-						<h2 class="title">Жилье</h2>
-						<p class="text">
-							Рекомендуем пожить в настоящем мотеле, все как в кино!
-						</p>
+				</article>
+				<article class="house-card">
+					<div class="house-card__pic">
+						<img class="house-card__pic-img" src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
 					</div>
-					<div class="features-block">
-						<h2 class="title">Еда</h2>
-						<p class="text">
-							Всегда заказывайте фирменный бургер, вы не разочаруетесь!
-						</p>
+					<h2 class="house-card__title">Desert Quail Inn</h2>
+					<span class="house-card__property-type">Мотель</span>
+					<span class="house-card__price">от 2000 р.</span>
+					<a class="btn btn_more" href="#" class="btn">Подробнее</a>
+					<a class="btn btn_reserve" href="#" class="btn">Забронировать</a>
+					<div class="rating">
+						<span class="rating__point-star"></span>
+						<span class="rating__point-number">Рейтинг: 8,9</span>
 					</div>
-					<div class="features-block">
-						<h2 class="title">Сувениры</h2>
-						<p class="text">
-							Не только китайского, но и местного производства!
-						</p>
+				</article>
+				<article class="house-card">
+					<div class="house-card__pic">
+						<img class="house-card__pic-img" src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
 					</div>
-				</section>
-				<section class="section">
-					<div class="section__left">
-						<div class="section__pic">
-							<img class="section__pic-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
-						</div>
+					<h2 class="house-card__title">Villas at Poco Diablo</h2>
+					<span class="house-card__property-type">Апартаменты</span>
+					<span class="house-card__price">от 4000 р.</span>
+					<a class="btn btn_more" href="#" class="btn">Подробнее</a>
+					<a class="btn btn_reserve" href="#" class="btn">Забронировать</a>
+					<div class="rating">
+						<span class="rating__point-star"></span>
+						<span class="rating__point-number">Рейтинг: 9,2</span>
 					</div>
-					<div class="section__right">
-						<h2 class="title-main">Там есть мост дьявола</h2>
-						<span class="text">— №2 —</span>
-						<p class="text">
-							Да, по нему можно пройти! Если конечно вы осмелитесь
-						</p>
-					</div>
-				</section>
-				<section class="features">
-					<div class="features-block features-block_without-pic">
-						<h2 class="title">Небольшая площадь</h2>
-						<span class="text">— №3 —</span>
-						<p class="text">
-							Все достопримечательности находятся очень близко
-						</p>
-					</div>
-					<div class="features-block features-block_without-pic">
-						<h2 class="title">Красивая дорога</h2> 
-						<span class="text">— №4 —</span>
-						<p class="text">
-							Ехать в Седону из Лас-Вегаса совсем не скучно!
-						</p>
-					</div>
-					<div class="features-block features-block_without-pic">
-						<h2 class="title">Мало туристов</h2>
-						<span class="text">— №5 —</span>
-						<p class="text">
-							Большинство едет в Гранд Каньон и толпится там
-						</p>
-					</div>
-				</section>
-				<section class="hotel-search">
-					<h2 class="title">Заинтересовались?</h2>
-					<p class="text">
-						Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне
-					</p>
-					<div class="hotel-search__pic">
-						<img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="473" alt="Карта" >
-					</div>
-					<form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-						<div class="hotel-search-form__top">
-							<h2 class="title">Поиск гостиницы в седоне</h2>
-						</div>
-						<div class="hotel-search-form__bottom">
-							<label class="text" for="date-start">Дата заезда</label>
-							<input class="text" type="date" name="date-start" id="date-start">
-							<label class="text" for="date-finish">Дата выезда</label>
-							<input class="text" type="date" name="date-finish" id="date-finish">
-							<div class="counter">
-								<div class="counter__left">
-									<span class="text">Взрослые</span>
-									<button class="counter__btn"></button>
-									<div class="counter__value">2</div>
-									<button class="counter__btn"></button>
-								</div>
-								<div class="counter__right">
-									<span class="text">Дети</span>
-									<button class="counter__btn"></button>
-									<div class="counter__value">0</div>
-									<button class="counter__btn"></button>
-								</div>
-							</div>
-							<a class="btn title" href="hotels.html">Найти</a>
-						</div>
-					</form>
-				</section>
+				</article>
 			</div>
 		</main>
 		<footer class="footer-main">
