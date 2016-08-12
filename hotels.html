@@ -22,58 +22,50 @@
 						<img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Седона малый логотип">
 					</div>
 				</div>
-				<div class="header-main__left">
-					<nav class="navigation-main">
-						<ul class="navigation-main__list">
-							<li class="navigation-main__item">
-								<a href="#" class="navigation-main__link">Информация</a>
-							</li>
-							<li class="navigation-main__item">
-								<a href="#" class="navigation-main__link">Фото и видео</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
-				<div class="header-main__right">
-					<nav class="navigation-main">
-						<ul class="navigation-main__list">
-							<li class="navigation-main__item">
-								<a href="#" class="navigation-main__link">Карта штата</a>
-							</li>
-							<li class="navigation-main__item">
-								<a href="#" class="navigation-main__link">Гостиницы</a>
-							</li>
-						</ul>
-					</nav>
-				</div>
+				<nav class="navigation-main">
+					<ul class="navigation-main__list">
+						<li class="navigation-main__item">
+							<a href="#" class="navigation-main__link">Информация</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="#" class="navigation-main__link">Фото и видео</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="#" class="navigation-main__link">Карта штата</a>
+						</li>
+						<li class="navigation-main__item">
+							<a href="#" class="navigation-main__link">Гостиницы</a>
+						</li>
+					</ul>
+				</nav>
 	    </div>
     </header>
 		<main class="content-main">
 			<div class="container">
 				<div class="searching-filter">
-					<form class="hotel-selection-form" action="https://echo.htmlacademy.ru" method="post">
-							<fieldset class="infrastructure-choices__group">
-								<legend class="infrastructure-choices__title">Инфраструктура</legend>
-								<input type="checkbox" name="swimming-pool" id="swimming-pool">
-								<label for="swimming-pool">Бассейн</label>
-								<input type="checkbox" name="parking" id="parking">
-								<label for="parking">Парковка</label>
-								<input type="checkbox" name="wi-fi" id="wi-fi">
-								<label for="wi-fi">wi-fi</label>
+					<form class="searching-filter__form" action="https://echo.htmlacademy.ru" method="post">
+							<fieldset class="searching-filter__group">
+								<legend class="searching-filter__title">Инфраструктура</legend>
+								<input class="searching-filter__input" type="checkbox" name="swimming-pool" id="swimming-pool-field">
+								<label class="searching-filter__label" for="swimming-pool-field">Бассейн</label>
+								<input class="searching-filter__input" type="checkbox" name="parking" id="parking-field">
+								<label class="searching-filter__label" for="parking-field">Парковка</label>
+								<input class="searching-filter__input" type="checkbox" name="wi-fi" id="wi-fi-field">
+								<label class="searching-filter__label" for="wi-fi-field">wi-fi</label>
 							</fieldset>
-							<fieldset class="property-type__group">
-								<legend class="infrastructure-choices__title">Тип жилья</legend>
-								<input type="checkbox" name="hotel" id="hotel">
-								<label for="hotel">Гостиница</label>
-								<input type="checkbox" name="motel" id="motel">
-								<label for="motel">Мотель</label>
-								<input type="checkbox" name="apartments" id="apartments">
-								<label for="apartments">Апартаменты</label>
+							<fieldset class="searching-filter__group">
+								<legend class="searching-filter__title">Тип жилья</legend>
+								<input class="searching-filter__input" type="checkbox" name="hotel" id="hotel-field">
+								<label class="searching-filter__label" for="hotel-field">Гостиница</label>
+								<input class="searching-filter__input" type="checkbox" name="motel" id="motel-field">
+								<label class="searching-filter__label" for="motel-field">Мотель</label>
+								<input class="searching-filter__input" type="checkbox" name="apartments-field" id="apartments">
+								<label class="searching-filter__label" for="apartments-field">Апартаменты</label>
 							</fieldset>
-							<fieldset class="cost-per-day__group">
-								<legend class="cost-per-day__title">Стоимость в сутки (р):</legend>
-								<input type="text" name="min" id="min-price" placeholder="от 0">
-								<input type="text" name="max-price" id="max-price" placeholder="до 3000">
+							<fieldset class="searching-filter__group">
+								<legend class="searching-filter__title">Стоимость в сутки (р):</legend>
+								<input class="searching-filter__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
+								<input class="searching-filter__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
 								<div class="price-progress-bar">
 									<div class="price-progress-bar__line">
 										<div class="price-progress-bar__control-start"></div>
