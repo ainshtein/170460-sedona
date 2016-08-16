@@ -119,12 +119,12 @@
             <img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="73" alt="Карта" >
           </div>
             <a href="#" class="btn btn_header">Поиск гостиницы в седоне</a href="#">
-            <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="hotel-search-form__bottom">
-                <label class="text" for="date-start-field">Дата заезда</label>
-                <input class="text" type="text" name="date-start" id="date-start-field">
-                <label class="text" for="date-finish-field">Дата выезда</label>
-                <input class="text" type="text" name="date-finish" id="date-finish-field">
+            <div class="hotel-search-form">
+              <form action="https://echo.htmlacademy.ru" method="post">
+                <label class="hotel-search-form__label text" for="date-start-field">Дата заезда</label>
+                <input class="hotel-search-form__input text" type="text" name="date-start" id="date-start-field">
+                <label class="hotel-search-form__label text" for="date-finish-field">Дата выезда</label>
+                <input class="hotel-search-form__input text" type="text" name="date-finish" id="date-finish-field">
                 <div class="counter">
                   <div class="counter__left">
                     <span class="text">Взрослые</span>
@@ -140,8 +140,8 @@
                   </div>
                 </div>
                 <button type="submit" class="btn title" href="hotels.html">Найти</button>
-              </div>
-            </form>
+              </form>
+            </div>
           </section>
       </main>
       <footer class="footer-main">
