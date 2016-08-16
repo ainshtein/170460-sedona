@@ -16,65 +16,60 @@
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
       <![endif]-->
     <header class="header-main">
-      <div class="container">
-        <div class="logo-small">
-          <div class="logo-small__pic">
-            <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Седона малый логотип">
-          </div>
-        </div>
-        <nav class="navigation-main">
-          <ul class="navigation-main__list">
-            <li class="navigation-main__item">
-              <a href="#" class="navigation-main__link">Информация</a>
-            </li>
-            <li class="navigation-main__item">
-              <a href="#" class="navigation-main__link">Фото и видео</a>
-            </li>
-            <li class="navigation-main__item">
-              <a href="#" class="navigation-main__link">Карта штата</a>
-            </li>
-            <li class="navigation-main__item">
-              <a href="#" class="navigation-main__link">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="logo-small">
+        <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Логотип Седоны">
       </div>
+      <nav class="navigation-main">
+        <ul class="navigation-main__list">
+          <li class="navigation-main__item">
+            <a href="#" class="navigation-main__link">Информация</a>
+          </li>
+          <li class="navigation-main__item">
+            <a href="#" class="navigation-main__link">Фото и видео</a>
+          </li>
+          <li class="navigation-main__item">
+            <a href="#" class="navigation-main__link">Карта штата</a>
+          </li>
+          <li class="navigation-main__item">
+            <a href="#" class="navigation-main__link">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main class="content-main">
-      <div class="container">
-        <div class="searching-filter">
-          <form class="searching-filter__form" action="https://echo.htmlacademy.ru" method="post">
-              <fieldset class="searching-filter__group">
-                <legend class="searching-filter__title">Инфраструктура</legend>
-                <input class="searching-filter__input" type="checkbox" name="swimming-pool" id="swimming-pool-field">
-                <label class="searching-filter__label" for="swimming-pool-field">Бассейн</label>
-                <input class="searching-filter__input" type="checkbox" name="parking" id="parking-field">
-                <label class="searching-filter__label" for="parking-field">Парковка</label>
-                <input class="searching-filter__input" type="checkbox" name="wi-fi" id="wi-fi-field">
-                <label class="searching-filter__label" for="wi-fi-field">wi-fi</label>
-              </fieldset>
-              <fieldset class="searching-filter__group">
-                <legend class="searching-filter__title">Тип жилья</legend>
-                <input class="searching-filter__input" type="checkbox" name="hotel" id="hotel-field">
-                <label class="searching-filter__label" for="hotel-field">Гостиница</label>
-                <input class="searching-filter__input" type="checkbox" name="motel" id="motel-field">
-                <label class="searching-filter__label" for="motel-field">Мотель</label>
-                <input class="searching-filter__input" type="checkbox" name="apartments-field" id="apartments">
-                <label class="searching-filter__label" for="apartments-field">Апартаменты</label>
-              </fieldset>
-              <fieldset class="searching-filter__group">
-                <legend class="searching-filter__title">Стоимость в сутки (р):</legend>
-                <input class="searching-filter__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
-                <input class="searching-filter__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
-                <div class="price-progress-bar">
-                  <div class="price-progress-bar__line">
-                    <div class="price-progress-bar__min"></div>
-                    <div class="price-progress-bar__progress-line"></div>
-                    <div class="price-progress-bar__max"></div>
-                  </div>
-                </div>
-                <button class="btn" type="submit">Показать</button>
-              </fieldset>
+      <div class="searching-filter">
+        <form class="searching-filter__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="searching-filter__group">
+            <legend class="searching-filter__title">Инфраструктура</legend>
+            <input class="searching-filter__input" type="checkbox" name="swimming-pool" id="swimming-pool-field">
+            <label class="searching-filter__label" for="swimming-pool-field">Бассейн</label>
+            <input class="searching-filter__input" type="checkbox" name="parking" id="parking-field">
+            <label class="searching-filter__label" for="parking-field">Парковка</label>
+            <input class="searching-filter__input" type="checkbox" name="wi-fi" id="wi-fi-field">
+            <label class="searching-filter__label" for="wi-fi-field">wi-fi</label>
+          </fieldset>
+          <fieldset class="searching-filter__group">
+            <legend class="searching-filter__title">Тип жилья</legend>
+            <input class="searching-filter__input" type="checkbox" name="hotel" id="hotel-field">
+            <label class="searching-filter__label" for="hotel-field">Гостиница</label>
+            <input class="searching-filter__input" type="checkbox" name="motel" id="motel-field">
+            <label class="searching-filter__label" for="motel-field">Мотель</label>
+            <input class="searching-filter__input" type="checkbox" name="apartments-field" id="apartments">
+            <label class="searching-filter__label" for="apartments-field">Апартаменты</label>
+          </fieldset>
+          <fieldset class="searching-filter__group">
+            <legend class="searching-filter__title">Стоимость в сутки (р):</legend>
+            <input class="searching-filter__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
+            <input class="searching-filter__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
+            <div class="price-progress-bar">
+              <div class="price-progress-bar__line">
+                <div class="price-progress-bar__min"></div>
+                <div class="price-progress-bar__progress-line"></div>
+                <div class="price-progress-bar__max"></div>
+              </div>
+            </div>
+          </fieldset>
+          <button class="btn" type="submit">Показать</button>
           </form>
         </div>
         <header class="searching-results">
@@ -140,28 +135,21 @@
             </div>
           </article>
         </section>
-      </div>
     </main>
-    <footer class="footer-main">
-      <div class="container">
-        <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
-        <ul class="footer-social__list">
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
-          </li>
-          <li class="footer-social__item">
-            <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
-          </li>
-        </ul>
-        <a class="footer-copyright__link" href="#" target="_blank">
-          <div class="footer-copyright__pic">
+<footer class="footer-main">
+        <div class="footer-contacts">
+          <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
+        </div>
+        <div class="footer-social">
+          <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
+          <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
+          <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
+        </div>
+        <div class="footer-copyright">
+          <a class="footer-copyright__link" href="#" target="_blank">
             <img class="footer-copyright__pic-img" src="copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
-          </div>
-        </a>
-      </div>
-    </footer>
+          </a>
+        </div>
+      </footer>
   </body>
 </html>
