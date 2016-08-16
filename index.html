@@ -15,12 +15,10 @@
     <!--[if lt IE 9]>
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
       <![endif]-->
-    <header class="header-main">
-      <div class="container">
-        <div class="logo-small">
-          <div class="logo-small__pic">
-            <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Логотип Седоны">
-          </div>
+    <div class="wrapper">
+      <header class="header-main">
+        <div class="logo-small__pic">
+          <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Логотип Седоны">
         </div>
         <nav class="navigation-main">
           <ul class="navigation-main__list">
@@ -37,11 +35,9 @@
               <a href="#" class="navigation-main__link">Гостиницы</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="content-main">
-      <div class="container">
+          </nav>
+      </header>
+      <main class="content-main">
         <div class="logo">
           <div class="logo__pic">
             <img class="logo__pic-img" src="img/logo.png" width="458" height="352" alt="Седона логотип">
@@ -88,7 +84,7 @@
         <section class="section">
           <div class="section__left">
             <div class="section__pic">
-              <img class="section__pic-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
+              <img class="section__pic-img" src="img/bridge.jpg" width="800" height="256 alt="Мост дьявола">
             </div>
           </div>
           <div class="section__right">
@@ -128,56 +124,53 @@
             Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <div class="hotel-search__pic">
-            <img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="473" alt="Карта" >
+            <img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="73" alt="Карта" >
           </div>
-          <div class="">
-          <a href="#" class="btn btn_header">Поиск гостиницы в седоне</a href="#">
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="hotel-search-form__bottom">
-              <label class="text" for="date-start-field">Дата заезда</label>
-              <input class="text" type="text" name="date-start" id="date-start-field">
-              <label class="text" for="date-finish-field">Дата выезда</label>
-              <input class="text" type="text" name="date-finish" id="date-finish-field">
-              <div class="counter">
-                <div class="counter__left">
-                  <span class="text">Взрослые</span>
-                  <button class="counter__btn"></button>
-                  <div class="counter__value">2</div>
-                  <button class="counter__btn"></button>
+            <a href="#" class="btn btn_header">Поиск гостиницы в седоне</a href="#">
+            <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="hotel-search-form__bottom">
+                <label class="text" for="date-start-field">Дата заезда</label>
+                <input class="text" type="text" name="date-start" id="date-start-field">
+                <label class="text" for="date-finish-field">Дата выезда</label>
+                <input class="text" type="text" name="date-finish" id="date-finish-field">
+                <div class="counter">
+                  <div class="counter__left">
+                    <span class="text">Взрослые</span>
+                    <button class="counter__btn"></button>
+                    <div class="counter__value">2</div>
+                    <button class="counter__btn"></button>
+                  </div>
+                  <div class="counter__right">
+                    <span class="text">Дети</span>
+                    <button class="counter__btn"></button>
+                    <div class="counter__value">0</div>
+                    <button class="counter__btn"></button>
+                  </div>
                 </div>
-                <div class="counter__right">
-                  <span class="text">Дети</span>
-                  <button class="counter__btn"></button>
-                  <div class="counter__value">0</div>
-                  <button class="counter__btn"></button>
-                </div>
+                <button type="submit" class="btn title" href="hotels.html">Найти</button>
               </div>
-              <button type="submit" class="btn title" href="hotels.html">Найти</button>
-            </div>
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer class="footer-main">
-      <div class="container">
-          <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
-            </li>
-          </ul>
-          <a class="footer-copyright__link" href="#" target="_blank">
-            <div class="footer-copyright__pic">
-              <img class="footer-copyright__pic-img" src="copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
-            </div>
-          </a>
-      </div>
-    </footer>
+            </form>
+          </section>
+      </main>
+      <footer class="footer-main">
+        <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
+        <ul class="footer-social__list">
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
+          </li>
+          <li class="footer-social__item">
+            <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
+          </li>
+        </ul>
+        <a class="footer-copyright__link" href="#" target="_blank">
+          <div class="footer-copyright__pic">
+            <img class="footer-copyright__pic-img" src="copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
+          </div>
+        </a>
+      </footer>
+    </div>
   </body>
 </html>
