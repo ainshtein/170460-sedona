@@ -15,10 +15,10 @@
     <!--[if lt IE 9]>
         <p class="browsehappy">Ваш браузер <strong>устарел</strong>. Пожалуйста <a href="http://browsehappy.com/">обновите</a>
       <![endif]-->
-    <header class="header-main">
-      <div class="container">
-          <div class="logo-small__pic">
-            <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Логотип Седоны">
+    <div class="wrapper">
+      <header class="header-main">
+        <div class="logo-small">
+          <img class="logo-small__pic-img" src="img/logo-small.png" width="138" height="70" alt="Логотип Седоны">
         </div>
         <nav class="navigation-main">
           <ul class="navigation-main__list">
@@ -35,32 +35,26 @@
               <a href="#" class="navigation-main__link">Гостиницы</a>
             </li>
           </ul>
-        </nav>
-      </div>
-    </header>
-    <main class="content-main">
-      <div class="container">
-        <div class="logo">
-          <div class="logo__pic">
-            <img class="logo__pic-img" src="img/logo.png" width="458" height="352" alt="Седона логотип">
+          </nav>
+      </header>
+      <main class="content-main">
+        <section class="promo">
+          <div class="promo__pic">
+            <img class="promo__pic-img" src="img/logo.png" width="458" height="352" alt="Седона логотип">
           </div>
-        </div>
-        <h1 class="title-main">СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего!</h1>
-        <p class="text">
-          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-        </p>
-        <section class="section">
-          <div class="section__left">
-            <strong class="title-main">Настоящий городок</strong>
-            <span class="text">— №1 —</span>
-            <p class="text">
-              СЕДОНА — не атракцион для туристов, там течет своя жизнь.
-            </p>
-          </div>
-          <div class="section__right">
-            <div class="section__pic">
-              <img class="section__pic-img" src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
-            </div>
+          <h1 class="title-main">СЕДОНА — небольшой городок в АРИЗОНЕ,  заслуживающий большего!</h1>
+          <p class="text">
+            Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+          </p>
+        </section>
+        <section class="section-features">
+          <strong class="title-main">Настоящий городок</strong>
+          <span class="text">— №1 —</span>
+          <p class="text">
+            СЕДОНА — не атракцион для туристов, там течет своя жизнь.
+          </p>
+          <div class="section-features__pic">
+            <img class="section-features__pic-img" src="img/real-town.jpg" width="800" height="256" alt="Настоящий городок">
           </div>
         </section>
         <section class="features">
@@ -83,36 +77,32 @@
             </p>
           </div>
         </section>
-        <section class="section">
-          <div class="section__left">
-            <div class="section__pic">
-              <img class="section__pic-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
-            </div>
+        <section class="section-features">
+          <div class="section-features__pic">
+            <img class="section__pic-img" src="img/bridge.jpg" width="800" height="256" alt="Мост дьявола">
           </div>
-          <div class="section__right">
-            <strong class="title-main">Там есть мост дьявола</strong>
-            <span class="text">— №2 —</span>
-            <p class="text">
-              Да, по нему можно пройти! Если конечно вы осмелитесь
-            </p>
-          </div>
+          <strong class="title-main">Там есть мост дьявола</strong>
+          <span class="text">— №2 —</span>
+          <p class="text">
+            Да, по нему можно пройти! Если конечно вы осмелитесь
+          </p>
         </section>
-        <section class="features">
-          <div class="features-block features-block_without-pic">
+        <section class="features features_without-pic">
+          <div class="features-block">
             <strong class="title">Небольшая площадь</strong>
             <span class="text">— №3 —</span>
             <p class="text">
               Все достопримечательности находятся очень близко
             </p>
           </div>
-          <div class="features-block features-block_without-pic">
+          <div class="features-block">
             <strong class="title">Красивая дорога</strong> 
             <span class="text">— №4 —</span>
             <p class="text">
               Ехать в Седону из Лас-Вегаса совсем не скучно!
             </p>
           </div>
-          <div class="features-block features-block_without-pic">
+          <div class="features-block">
             <strong class="title">Мало туристов</strong>
             <span class="text">— №5 —</span>
             <p class="text">
@@ -126,16 +116,15 @@
             Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
           <div class="hotel-search__pic">
-            <img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="473" alt="Карта" >
+            <img class="hotel-search__pic-img" src="img/map.jpg" width="1200" height="73" alt="Карта" >
           </div>
-          <div class="">
           <a href="#" class="btn btn_header">Поиск гостиницы в седоне</a href="#">
-          <form class="hotel-search-form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="hotel-search-form__bottom">
-              <label class="text" for="date-start-field">Дата заезда</label>
-              <input class="text" type="text" name="date-start" id="date-start-field">
-              <label class="text" for="date-finish-field">Дата выезда</label>
-              <input class="text" type="text" name="date-finish" id="date-finish-field">
+          <div class="hotel-search-form">
+            <form action="https://echo.htmlacademy.ru" method="post">
+              <label class="hotel-search-form__label text" for="date-start-field">Дата заезда</label>
+              <input class="hotel-search-form__input text" type="text" name="date-start" id="date-start-field">
+              <label class="hotel-search-form__label text" for="date-finish-field">Дата выезда</label>
+              <input class="hotel-search-form__input text" type="text" name="date-finish" id="date-finish-field">
               <div class="counter">
                 <div class="counter__left">
                   <span class="text">Взрослые</span>
@@ -151,31 +140,25 @@
                 </div>
               </div>
               <button type="submit" class="btn title" href="hotels.html">Найти</button>
-            </div>
-          </form>
+            </form>
+          </div>
         </section>
-      </div>
-    </main>
-    <footer class="footer-main">
-      <div class="container">
+      </main>
+      <footer class="footer-main">
+        <section class="footer-contacts">
           <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
-          <ul class="footer-social__list">
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
-            </li>
-            <li class="footer-social__item">
-              <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
-            </li>
-          </ul>
+        </section>
+        <section class="footer-social">
+          <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
+          <a class="footer-social__link footer-social__link_fb" href="#" target="_blank">Фейсбук</a>
+          <a class="footer-social__link footer-social__link_yt" href="#" target="_blank">Ютуб</a>
+        </section>
+        <section class="footer-copyright">
           <a class="footer-copyright__link" href="#" target="_blank">
-            <div class="footer-copyright__pic">
-              <img class="footer-copyright__pic-img" src="img/copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
-            </div>
+            <img class="footer-copyright__pic-img" src="copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
           </a>
-      </div>
-    </footer>
+        </section>
+      </footer>
+    </div>
   </body>
 </html>
