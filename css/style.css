@@ -269,3 +269,118 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- end page styles index.html----- */
 
 /* ----- grid styles hotels.html----- */
+.searching-filter {
+  min-height: 217px;
+  background-color: #3d688a;
+  text-align: left;
+  color: white;
+  padding: 30px 73px;
+}
+.searching-filter__group {
+  float: left;
+  width: 240px;
+  background-color: #6b5c59;
+}
+.searching-filter__group:last-child {
+  float: right;
+  width: 328px;
+}
+.searching-results {
+  min-height: 88px;
+  background-color: pink;
+  text-align: left;
+  color: black;
+  padding: 30px 73px;
+}
+.searching-results__title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  background-color: lightgray;
+  margin-right: 50px;
+}
+.sorting-filter {
+  display: inline-block;
+  vertical-align: middle;
+  background-color: lightgray;
+}
+.sorting-filter__title {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  margin-right: 35px;
+}
+.sorting-filter__link {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #bbbbbb;
+  text-decoration: none;
+  border-bottom: 1px dotted #81b3d2;
+  margin-right: 30px;
+}
+.searching-filter__link_active {
+  color: #81b3d2;
+  text-decoration: none;
+  border: none;
+}
+.house-card {
+  min-height: 150px;
+  border-top: 1px solid #e5e5e5;
+  padding: 30px 73px;
+  background-color: #857474;
+}
+.house-card__pic {
+  float: left;
+  width: 135px;
+  height: 90px;
+  margin-right: 30px;
+}
+.house-card__title {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+}
+.house-card__property-type, .house-card__price {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #333333;
+}
+.btn_more {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  padding: 3px 15px;
+  margin-right: 5px;
+}
+.btn_reserve {
+  display: inline-block;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 21px;
+  color: #ffffff;
+  background-color: #766357;
+  padding: 3px 15px;
+}
+.rating {
+  float: right;
+  width: 150px;
+  text-align: right;
+}
+.rating__point-number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  color: #666666;
+  background-color: #f2f2f2;
+  padding: 3px 15px;
+}
+/* ----- end page styles hotels.html----- */
