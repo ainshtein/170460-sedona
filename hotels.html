@@ -38,8 +38,8 @@
         </nav>
       </header>
       <main class="content-main">
-        <div class="searching-filter">
-          <form class="searching-filter__form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="searching-filter ">
+          <form class="searching-filter__form clearfix" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="searching-filter__group">
               <legend class="searching-filter__title">Инфраструктура</legend>
               <input class="searching-filter__input" type="checkbox" name="swimming-pool" id="swimming-pool-field">
@@ -69,11 +69,11 @@
                   <div class="price-slider__max"></div>
                 </div>
               </div>
+              <button class="btn" type="submit">Показать</button>
             </fieldset>
-            <button class="btn" type="submit">Показать</button>
           </form>
         </div>
-        <header class="searching-results">
+        <div class="searching-results">
           <span class="searching-results__title">Найдено: <output class="searching-results__quantity">3</output></span>
           <div class="sorting-filter">
             <span class="sorting-filter__title">Сортировка:</span>
@@ -83,23 +83,23 @@
             <span class="ascending__link ascending__link_active">по возрастанию</span>
             <a class="descending__link" href="#">по убыванию</a>
           </div>
-        </header>
+        </div>
         <section class="hotels">
-          <article class="house-card">
+          <article class="house-card clearfix">
             <div class="house-card__pic">
               <img class="house-card__pic-img" src="img/amara.jpg" width="135" height="90" alt="Гостиница Amara Resort &amp; Spa">
             </div>
             <h2 class="house-card__title">Amara Resort &amp; Spa</h2>
             <span class="house-card__property-type">Гостиница</span>
             <span class="house-card__price">от 3500 р.</span>
-            <a class="btn btn_more" href="#" class="btn">Подробнее</a>
-            <a class="btn btn_reserve" href="#" class="btn">Забронировать</a>
+            <a class="btn btn_more" href="#">Подробнее</a>
+            <a class="btn btn_reserve" href="#">Забронировать</a>
             <div class="rating">
               <span class="rating__point-star"></span>
               <span class="rating__point-number">Рейтинг: 8,5</span>
             </div>
           </article>
-          <article class="house-card">
+          <article class="house-card clearfix">
             <div class="house-card__pic">
               <img class="house-card__pic-img" src="img/desert.jpg" width="135" height="90" alt="Мотель Desert Quail Inn">
             </div>
@@ -113,7 +113,7 @@
               <span class="rating__point-number">Рейтинг: 8,9</span>
             </div>
           </article>
-          <article class="house-card">
+          <article class="house-card clearfix">
             <div class="house-card__pic">
               <img class="house-card__pic-img" src="img/villas.jpg" width="135" height="90" alt="Апартаменты Villas at Poco Diablo">
             </div>
@@ -131,7 +131,7 @@
       </main>
       <footer class="footer-main">
         <section class="footer-contacts">
-          <a class="footer-main-contacts__link" href="#" >#Visitsedona</a>
+          <a class="footer-contacts__link" href="#" >#Visitsedona</a>
         </section>
         <section class="footer-social">
           <a class="footer-social__link footer-social__link_tw" href="#" target="_blank">Твитер</a>
@@ -140,6 +140,7 @@
         </section>
         <section class="footer-copyright">
           <a class="footer-copyright__link" href="#" target="_blank">
+            <span class="footer-copyright__text">website by</span>
             <img class="footer-copyright__pic-img" src="img/copy-logo.png" width="113" height="39" alt="Сайт разработан компанией - ">
           </a>
         </section>
