@@ -2317,6 +2317,9 @@ li {
   margin-left: -69px;
   z-index: 5;
 }
+.logo-small_link {
+  display: block;
+}
 .navigation-main {
   font-size: 0;
 }
@@ -2324,6 +2327,7 @@ li {
   padding: 0;
   margin: 0;
 }
+
 .navigation-main__item {
   display: inline-block;
   min-width: 200px;
@@ -2344,6 +2348,23 @@ li {
   text-decoration: none;
   padding: 16px 70px;
   text-decoration: none;
+}
+.navigation-main__link:hover {
+  color: #81b3d2;
+}
+.navigation-main__item:active {
+  color: #000000;
+  opacity: 0.3;
+}
+.navigation-main__link_active {
+  color: #766357; 
+}
+.navigation-main__link_active:hover {
+  color: #604e43;
+}
+.navigation-main__link_active:active {
+  color: #766357;
+  opacity: 0.3;
 }
 .promo {
   position: relative;
@@ -2625,14 +2646,50 @@ li {
   margin: 0 5px;
   text-decoration: none;
 }
+.footer-social__link_tw {
+  background: #81b3d2 url(../img/icon-social-tw.png) 50% 50% no-repeat;
+}
+.footer-social__link_tw:hover {
+  background-color: #669ec0;
+}
+.footer-social__link_tw:active {
+    background: #5496bd url(../img/icon-social-tw_active.png) 50% 50% no-repeat;
+}
+.footer-social__link_fb {
+  background: #81b3d2 url(../img/icon-social-fb.png) 50% 50% no-repeat;
+}
+.footer-social__link_fb:hover {
+  background-color: #669ec0;
+}
+.footer-social__link_fb:active {
+    background: #5496bd url(../img/icon-social-fb_active.png) 50% 50% no-repeat;
+}
+.footer-social__link_yt {
+  background: #81b3d2 url(../img/icon-social-yt.png) 50% 50% no-repeat;
+}
+.footer-social__link_yt:hover {
+  background-color: #669ec0;
+}
+.footer-social__link_yt:active {
+    background: #5496bd url(../img/icon-social-yt_active.png) 50% 50% no-repeat;
+}
 .footer-copyright {
   float: left;
   width: 240px;
 }
 .footer-copyright__link {
   display: block;
+  min-height: 39px;
   vertical-align: middle;
+  text-align: left;
   text-decoration: none;
+  background: url(../img/copy-logo.png) 120px 0 no-repeat;
+}
+.footer-copyright__link:hover {
+    background: url(../img/copy-logo_hover.png) 120px 0 no-repeat;
+}
+.footer-copyright__link:active {
+    background: url(../img/copy-logo_active.png) 120px 0 no-repeat;
 }
 .footer-copyright__text {
   color: #000000;
@@ -2641,14 +2698,16 @@ li {
   font-weight: 400;
   line-height: 26px;
   text-transform: uppercase;
-  text-align: center;
 }
-.footer-copyright__pic-img {
+/*.footer-copyright__pic-bg {
   display: inline-block;
   vertical-align: middle;
+  font-size: 0;
   width: 113px;
   height: 39px;
-}
+  background: url(../img/copy-logo.png) 0 0 no-repeat;
+}*/
+
 
 /* ----- end page styles index.html----- */
 
