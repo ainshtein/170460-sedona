@@ -1,4 +1,4 @@
-/* ----- adjustment styles ----- */
+ ----- adjustment styles ----- */
 html, body {
   width: 100%;
   height: 100%;
@@ -11,41 +11,40 @@ body {
   font-weight: normal;
   text-transform: uppercase;
   -webkit-font-smoothing: antialiased;
-  background-color: white;
+  background-color: #f2f2f2;  
 }
 .wrapper {
   width: 1200px;
   margin: 0 auto;
-  //padding: 0 10px;
-}
-ul {
-  padding: 0;
-  margin: 0;
-}
-li {
-  list-style-type: none;
+  box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
 }
 .clearfix::after {
   content: " ";
   display: table;
   clear: both;
 }
-h1, h2, h3, h4, h5, h6 {
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*ul {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style-type: none;
+}*/
+
+/*h1, h2, h3, h4, h5, h6 {
   margin: 0;
   font-weight: normal;
-}
+}*/
 /* ----- end of adjustment styles ----- */
 
 /* ----- page styles ----- */
-.navigation-main__link {
-  color: black;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
+
 .title-main {
   color: black;
   font-family: "PT Sans", Arial, sans-serif;
@@ -77,50 +76,90 @@ h1, h2, h3, h4, h5, h6 {
 /* ----- end of page styles ----- */
 
 /* ----- grid styles index.html----- */
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+
 .header-main {
   position: relative;
   min-height: 56px;
-  background-color: yellow;
+  background-color: #ffffff;
 }
 .logo-small {
   position: absolute;
   left: 50%;
   margin-left: -69px;
+  z-index: 5;
 }
 .navigation-main {
   font-size: 0;
+}
+.navigation-main__list {
+  padding: 0;
+  margin: 0;
 }
 .navigation-main__item {
   display: inline-block;
   min-width: 200px;
   text-align: center;
+  list-style-type: none;
 }
 .navigation-main__item:nth-child(3n){
   margin-left: 284px;
 }
 .navigation-main__link {
   display: block;
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
   padding: 16px 70px;
-  background-color: lightgray;
+  text-decoration: none;
 }
 .promo {
+  position: relative;
   min-height: 508px;
   padding-top: 1px;
   padding-bottom: 1px;
-  background-color: lightblue;
+  background: #ffffff url(../img/bg-logo.jpg) 0 0 no-repeat;
+}
+.promo::after {
+  content: url(../img/logo-shape.png);
+  position: absolute;
+  top: 451px;
 }
 .promo__pic {
   width: 458px;
   height: 352px;
   margin: 76px auto 140px;
 }
+.promo__pic-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
 .promo__title {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
   padding: 0 320px;
+}
+.promo__text {
+  color: #333333;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
 }
 .section-features {
   min-height: 256px;
@@ -129,37 +168,61 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 .section-features__title {
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   width: 400px;
   margin-top: 50px;
   margin-bottom: 25px;
-  color: white;
 }
 .section-features__number {
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  color: white; 
 }
 .section-features__text {
+  color: #ffffff;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   width: 300px;
   margin-top: 25px;
   margin-bottom: 50px;
-  color: white;
 }
 .section-features__pic {
   width: 800px;
   height: 256px;
+  background-color: #ad9185;
+}
+.section-features__pic-img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
 }
 .section-features__pic_right {
   float: right;
 }
 .features {
   min-height: 330px;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
   text-align: center;
 }
 .features-block {
@@ -168,10 +231,48 @@ h1, h2, h3, h4, h5, h6 {
   padding: 60px 50px 80px;
 }
 .features-block__title {
+  position: relative;
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   margin-top: 100px;
   margin-bottom: 30px;
+}
+.features-block__title_ico-house::before {
+  content: url(../img/icon-house.png);
+  position: absolute;
+  right: 50%;
+  bottom: 45px;
+  margin-right: -37.5px;
+}
+.features-block__text {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.features-block__title_ico-food::before {
+  content: url(../img/icon-food.png);
+  position: absolute;
+  right: 50%;
+  bottom: 45px;
+  margin-right: -37.5px;
+}
+.features-block__title_ico-present::before {
+  content: url(../img/icon-present.png);
+  position: absolute;
+  right: 50%;
+  bottom: 45px;
+  margin-right: -37.5px;
 }
 .section-features__pic_left {
   float: left;
@@ -181,30 +282,52 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #eeeeee;
   text-align: center;
 }
-.features_without-pic .features-block {
+.features-block-_without-pic {
   padding: 50px 60px 60px;
 }
-.features_without-pic .features-block__title {
+.features-block__title_without-pic {
   margin-top: 0;
   margin-bottom: 30px;
 }
 .features-block__number {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   width: 200px;
 }
 .hotel-search {
   min-height: 884px;
-  background-color: pink;
+  background-color: #ffffff;
   text-align: center;
 }
+
 .hotel-search__title {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
   display: inline-block;
   vertical-align: top;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 .hotel-search__text {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
   width: 450px;
   margin: 0 auto 50px;
 }
@@ -225,42 +348,74 @@ h1, h2, h3, h4, h5, h6 {
   display: none;
 }
 .hotel-search__pic {
-  position: relative;
   width: 1200px;
   height: 593px;
 }
+.hotel-search__pic-img {
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
 .footer-main {
   min-height: 120px;
-  background-color: #f6584c;
+  background-color: #ffffff;
+  opacity: 0.9;
   text-align: center;
-  color: black;
+  color: #000000;
   padding: 35px 73px;
+  margin-top: -120px;
 }
 .footer-contacts {
   float: left;
   width: 240px;
-  background-color: #ded9d3;
 }
 .footer-contacts__link {
   text-decoration: none;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  color: white;
+  color: #000000;
 }
 .footer-social {
   float: left;
   width: 400px;
   margin: 0 80px;
-  background-color: #ded9d3;
+  font-size: 0;
+}
+.footer-social__link {
+  display: inline-block;
+  vertical-align: middle;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+  margin: 0 5px;
+  text-decoration: none;
 }
 .footer-copyright {
   float: left;
   width: 240px;
-  background-color: #ded9d3;
 }
-.footer-social__link {
+.footer-copyright__link {
+  display: block;
+  vertical-align: middle;
   text-decoration: none;
+}
+.footer-copyright__text {
+  color: #000000;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.footer-copyright__pic-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 113px;
+  height: 39px;
 }
 
 /* ----- end page styles index.html----- */
@@ -380,4 +535,4 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #f2f2f2;
   padding: 3px 15px;
 }
-/* ----- end page styles hotels.html----- */
+/* ----- end page styles hotels.html----- 
