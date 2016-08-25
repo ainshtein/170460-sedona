@@ -44,26 +44,38 @@
           <form class="searching-filter__form clearfix" action="https://echo.htmlacademy.ru" method="post">
             <fieldset class="searching-filter__group">
               <legend class="searching-filter__title">Инфраструктура</legend>
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
               <input class="searching-filter__input" type="checkbox" name="swimming-pool" id="swimming-pool-field">
               <label class="searching-filter__label" for="swimming-pool-field">Бассейн</label>
-              <input class="searching-filter__input" type="checkbox" name="parking" id="parking-field">
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
+              <input class="searching-filter__input" type="checkbox" name="parking" id="parking-field"> 
               <label class="searching-filter__label" for="parking-field">Парковка</label>
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
               <input class="searching-filter__input" type="checkbox" name="wi-fi" id="wi-fi-field">
               <label class="searching-filter__label" for="wi-fi-field">wi-fi</label>
             </fieldset>
             <fieldset class="searching-filter__group">
               <legend class="searching-filter__title">Тип жилья</legend>
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
               <input class="searching-filter__input" type="checkbox" name="hotel" id="hotel-field">
               <label class="searching-filter__label" for="hotel-field">Гостиница</label>
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
               <input class="searching-filter__input" type="checkbox" name="motel" id="motel-field">
               <label class="searching-filter__label" for="motel-field">Мотель</label>
+              <i class="fa fa-square-o" aria-hidden="true"></i>
+              <i class="fa fa-check-square-o" aria-hidden="true"></i>
               <input class="searching-filter__input" type="checkbox" name="apartments" id="apartments-field">
               <label class="searching-filter__label" for="apartments-field">Апартаменты</label>
             </fieldset>
-            <fieldset class="searching-filter__group">
-              <legend class="searching-filter__title">Стоимость в сутки (р):</legend>
-              <input class="searching-filter__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
-              <input class="searching-filter__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
+            <fieldset class="searching-filter-slider">
+              <legend class="searching-filter-slider__title">Стоимость в сутки (р):</legend>
+              <input class="searching-filter-slider__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
+              <input class="searching-filter-slider__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
               <div class="price-slider">
                 <div class="price-slider__line">
                   <div class="price-slider__min"></div>
@@ -71,7 +83,7 @@
                   <div class="price-slider__max"></div>
                 </div>
               </div>
-              <button class="btn" type="submit">Показать</button>
+              <button class="searching-filter__submit" type="submit">Показать</button>
             </fieldset>
           </form>
         </div>
@@ -79,11 +91,11 @@
           <span class="searching-results__title">Найдено: <output class="searching-results__quantity">3</output></span>
           <div class="sorting-filter">
             <span class="sorting-filter__title">Сортировка:</span>
-            <span class="sorting-filter__link searching-filter__link_active">по цене</span>
+            <span class="sorting-filter__link sorting-filter__link_active">по цене</span>
             <a class="sorting-filter__link" href="#">по типу</a>
             <a class="sorting-filter__link" href="#">по рейтингу</a>
-            <span class="ascending__link ascending__link_active">по возрастанию</span>
-            <a class="descending__link" href="#">по убыванию</a>
+            <a class="sorting-filter__arrow-link" href="#"><i class="fa fa-caret-up" aria-hidden="true"></i>по возрастанию</a>
+            <span class="sorting-filter__arrow-link sorting-filter__arrow-link_active"><i class="fa fa-caret-down" aria-hidden="true"></i>по убыванию</span>
           </div>
         </div>
         <section class="hotels">
