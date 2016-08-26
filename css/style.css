@@ -2652,17 +2652,22 @@ li {
 .hotel-search-form__field {
   position: relative;
 }
-.hotel-search-form__calendar::after {
-  content: url("../img/form-calendar.png");
+.icon-calendar {
   position: absolute;
   right: 10px;
-  bottom: 35px;
+  bottom: 40px;
+  color: #c2c2c2;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  right: 10px;
+  bottom: 40px;
 }
-.hotel-search-form__calendar:hover::after {
-  content: url("../img/form-calendar_hover.png");
+.icon-calendar:hover {
+  color: #000000;
 }
-.hotel-search-form__calendar:active::after {
-  content: url("../img/form-calendar_active.png");
+.icon-calendar:active {
+  color: #81b3d2;
 }
 .counter {
   margin-bottom: 55px;
@@ -2689,18 +2694,18 @@ li {
   padding: 0;
   margin: 0;
 }
-.fa-minus, .fa-plus {
+.icon-minus, .icon-plus {
   color: #a9a9a9;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;
   text-transform: uppercase;
 }
-.counter__btn:hover .fa-minus, 
-.counter__btn:hover .fa-plus {
+.counter__btn:hover .icon-minus, 
+.counter__btn:hover .icon-plus {
   color: #000000;
 }
-.counter__btn:active .fa-minus, 
-.counter__btn:active .fa-plus {
+.counter__btn:active .icon-minus, 
+.counter__btn:active .icon-plus {
   color: #81b3d2;
 }
 .counter__input {
@@ -2741,7 +2746,6 @@ li {
 .hotel-search-form__btn:active {
   color: rgba(255, 255, 255, 0.3);
   background-color: #5496bd;
-
 }
 .hotel-search__pic {
   width: 1200px;
@@ -2805,33 +2809,6 @@ li {
 .footer-social__link:active .icon-youtube {
   opacity: 0.3;
 }
-/*.footer-social__link_tw {
-  background: #81b3d2 url(../img/icon-social-tw.png) 50% 50% no-repeat;
-}
-.footer-social__link_tw:hover {
-  background-color: #669ec0;
-}
-.footer-social__link_tw:active {
-    background: #5496bd url(../img/icon-social-tw_active.png) 50% 50% no-repeat;
-}
-.footer-social__link_fb {
-  background: #81b3d2 url(../img/icon-social-fb.png) 50% 50% no-repeat;
-}
-.footer-social__link_fb:hover {
-  background-color: #669ec0;
-}
-.footer-social__link_fb:active {
-    background: #5496bd url(../img/icon-social-fb_active.png) 50% 50% no-repeat;
-}
-.footer-social__link_yt {
-  background: #81b3d2 url(../img/icon-social-yt.png) 50% 50% no-repeat;
-}
-.footer-social__link_yt:hover {
-  background-col or: #669ec0;
-}
-.footer-social__link_yt:active {
-    background: #5496bd url(../img/icon-social-yt_active.png) 50% 50% no-repeat;
-}*/
 .footer-copyright {
   float: left;
   width: 240px;
@@ -2858,16 +2835,6 @@ li {
   line-height: 26px;
   text-transform: uppercase;
 }
-/*.footer-copyright__pic-bg {
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 0;
-  width: 113px;
-  height: 39px;
-  background: url(../img/copy-logo.png) 0 0 no-repeat;
-}*/
-
-
 /* ----- end page styles index.html----- */
 
 /* ----- styles hotels.html----- */
