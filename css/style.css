@@ -27,6 +27,45 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+  display: inline-block;
+  width: 1em;
+  margin-right: 0.2em;
+  margin-left: 0.2em;
+
+  font-weight: normal;
+  line-height: 1em;
+  font-family: "symbols-sedona";
+  text-align: center;
+  text-transform: none;
+  text-decoration: inherit;
+  font-style: normal;
+  font-variant: normal;
+
+  speak: none;
+}
+
+.icon-facebook::before { content: "\66"; } /* "f" */
+.icon-twitter::before { content: "\74"; } /* "t" */
+.icon-up-dir::before { content: "\25b2"; } /* "▲" */
+.icon-down-dir::before { content: "\25bc"; } /* "▼" */
+.icon-star::before { content: "\2605"; } /* "★" */
+.icon-check-off::before { content: "\2610"; } /* "☐" */
+.icon-check-on::before { content: "\2611"; } /* "☑" */
+.icon-calendar::before { content: "\e800"; } /* "" */
+.icon-plus::before { content: "\e801"; } /* "" */
+.icon-minus::before { content: "\e802"; } /* "" */
+.icon-youtube::before { content: "\f39e"; } /* "" */
 /*!
  *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -2745,11 +2784,28 @@ li {
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
-  color: #000000;
+  color: #ffffff;
   margin: 0 5px;
   text-decoration: none;
+  text-align: center;
 }
-.footer-social__link_tw {
+.icon-twitter, .icon-facebook,
+.icon-youtube {
+  font-size: 19px;
+  line-height: 48px;
+}
+.footer-social__link:hover {
+  background-color: #669ec0;
+}
+.footer-social__link:active {
+  background-color: #5496bd;
+}
+.footer-social__link:active .icon-twitter, 
+.footer-social__link:active .icon-facebook,
+.footer-social__link:active .icon-youtube {
+  opacity: 0.3;
+}
+/*.footer-social__link_tw {
   background: #81b3d2 url(../img/icon-social-tw.png) 50% 50% no-repeat;
 }
 .footer-social__link_tw:hover {
@@ -2775,7 +2831,7 @@ li {
 }
 .footer-social__link_yt:active {
     background: #5496bd url(../img/icon-social-yt_active.png) 50% 50% no-repeat;
-}
+}*/
 .footer-copyright {
   float: left;
   width: 240px;
