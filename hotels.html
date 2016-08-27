@@ -62,14 +62,18 @@
             </fieldset>
             <fieldset class="searching-filter-slider">
               <legend class="searching-filter-slider__title">Стоимость в сутки (р):</legend>
-              <input class="searching-filter-slider__input" type="text" name="min-price" id="min-price-field" placeholder="от 0">
-              <input class="searching-filter-slider__input" type="text" name="max-price" id="max-price-field" placeholder="до 3000">
-              <div class="price-slider">
-                <div class="price-slider__line">
-                  <div class="price-slider__min"></div>
-                  <div class="price-slider__progress-line"></div>
-                  <div class="price-slider__max"></div>
+              <div class="price-controls">
+                <label for="min-price-field" class="price-controls__label">от</label>
+                <input class="price-controls__input" type="text" name="min-price" id="min-price-field" value="0">
+                <label for="max-price-field" class="price-controls__label">до</label>
+                <input class="price-controls__input" type="text" name="max-price" id="max-price-field" value="3000">
+              </div>
+              <div class="range-controls">
+                <div class="range-controls__scale">
+                  <div class="range-controls__bar"></div>
                 </div>
+                <div class="range-controls__toggle range-controls__toggle_min"></div>
+                <div class="range-controls__toggle range-controls__toggle_max"></div>
               </div>
               <button class="searching-filter__submit" type="submit">Показать</button>
             </fieldset>
