@@ -97,26 +97,7 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
-/*ul {
-  padding: 0;
-  margin: 0;
-}
-li {
-  list-style-type: none;
-}*/
-
-/*h1, h2, h3, h4, h5, h6 {
-  margin: 0;
-  font-weight: normal;
-}*/
-/* ----- end of adjustment styles ----- */
-
-/* ----- page styles ----- */
-
-
-
-/* ----- end of page styles ----- */
+ /* ----- end of adjustment styles ----- */
 
 /* ----- styles index.html----- */
 
@@ -642,35 +623,6 @@ li {
 /* ----- end page styles index.html----- */
 
 /* ----- styles hotels.html----- */
-.title-main {
-  color: black;
-  font-family: 'pt_sansbold', Arial, sans-serif;;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.title {
-  color: black;
-  font-family: 'pt_sansbold', Arial, sans-serif;;
-  font-size: 21px;
-  font-weight: 700;
-  line-height: 21px;
-  text-transform: uppercase;
-  text-align: center;
-}
-.text {
-  color: #333;
-  font-family: "pt_sansregular", Arial, sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 26px;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-
 .searching-filter {
   min-height: 217px;
   background: #3d688a url("../img/bg-filter.jpg") 0 0 no-repeat;;
@@ -736,16 +688,12 @@ li {
 .searching-filter__label:last-child {
   margin-bottom: 0;
 }
-
-
-
 .searching-filter-slider {
   float: right;
   width: 328px;
   border: none;
   margin: 0;
   padding: 0;
-  //text-align: center;
 }
 .searching-filter-slider__title {
   color: #ffffff;
@@ -927,7 +875,6 @@ li {
 .sorting-filter__arrow-link:active .icon-down-dir{
   color: #81b3d2;
 }
-
 .house-card {
   min-height: 150px;
   border-top: 1px solid #e5e5e5;
