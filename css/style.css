@@ -109,8 +109,15 @@ body {
 .logo-small {
   position: absolute;
   left: 50%;
+  height: 70px;
+  width: 138px;
   margin-left: -69px;
   z-index: 5;
+}
+.logo-small__pic-img {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
 }
 .logo-small_link {
   display: block;
@@ -123,7 +130,7 @@ body {
 }
 .navigation-main__item {
   display: inline-block;
-  min-width: 200px;
+  //min-width: 200px;
   text-align: center;
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 14px;
