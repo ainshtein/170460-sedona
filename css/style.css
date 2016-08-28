@@ -174,7 +174,7 @@ body {
 .promo::after {
   content: url(../img/logo-shape.png);
   position: absolute;
-  top: 452px;
+  bottom: 212px;
 }
 .promo__pic {
   width: 458px;
