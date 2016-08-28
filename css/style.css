@@ -417,6 +417,7 @@ body {
 }
 .hotel-search-form__label {
   margin-right: 20px;
+  cursor: pointer;
 }
 .hotel-search-form__input {
   width: 349px;
@@ -426,6 +427,7 @@ body {
   padding: 10px;
   padding-right: 40px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 .hotel-search-form__input:hover {
   background-color: #ebebeb;
@@ -448,6 +450,7 @@ body {
   text-transform: uppercase;
   right: 10px;
   bottom: 35px;
+  cursor: pointer;
 }
 .icon-calendar:hover {
   color: #000000;
@@ -461,9 +464,13 @@ body {
 .counter__left, .counter__right {
   display: inline-block;
   font-size: 0;
+
 }
 .counter__left {
   margin-right: 50px;
+}
+.counter__label {
+  cursor: pointer;
 }
 .counter__left .counter__label {
   margin-right: 40px;
@@ -486,6 +493,7 @@ body {
   font-size: 14px;
   line-height: 38px;
   text-transform: uppercase;
+  cursor: pointer;
 }
 .counter__btn:hover .icon-minus, 
 .counter__btn:hover .icon-plus {
@@ -504,6 +512,7 @@ body {
   text-align: center;
   padding: 0;
   margin: 0;
+  c:p;
 }
 .counter__input:hover {
   background-color: #ebebeb;
@@ -526,6 +535,7 @@ body {
   width: 100%;
   padding-top: 15px;
   padding-bottom: 20px;
+  cursor: pointer;
 }
 .hotel-search-form__btn:hover {
   background-color: #669ec0;
@@ -540,8 +550,8 @@ body {
 }
 .hotel-search__pic-img {
   display: block;
-  min-width: 100%;
-  min-height: 100%;
+  max-width: 100%;
+  max-height: 100%;
 }
 .footer-main {
   min-height: 120px;
@@ -672,7 +682,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   padding-left: 40px;
   cursor: pointer;
 }
@@ -700,7 +710,7 @@ body {
 }
 .searching-filter-slider {
   float: right;
-  width: 328px;
+  width: 317px;
   border: none;
   margin: 0;
   padding: 0;
@@ -712,13 +722,14 @@ body {
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 9px;
+  margin-left: -10px;
   text-align: left;
 }
 .price-controls {
   position: relative;
-  height: 40px;
-  margin-bottom: 20px;
+  height: 36px;
+  margin-bottom: 19px;
   border: 2px solid #ffffff;
   border-radius: 2px;
   font-size: 0;
@@ -759,6 +770,7 @@ body {
   border: none;
   outline: none;
   margin: 0;
+  cursor: pointer;
 }
 .range-controls {
   position: relative;
@@ -806,7 +818,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   text-transform: uppercase;
-  padding: 10px 35px;
+  padding: 5px 33px;
   outline: none;
   cursor: pointer;
 }
@@ -820,6 +832,7 @@ body {
   text-align: left;
   color: black;
   padding: 30px 73px;
+  padding-right: 67px;
 }
 .searching-results__title {
   display: inline-block;
@@ -828,7 +841,7 @@ body {
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
-  margin-right: 50px;
+  margin-right: 42px;
 }
 .sorting-filter {
   display: inline-block;
@@ -904,20 +917,22 @@ body {
 }
 .house-card__pic-img {
   display: block;
-  min-height: 100%;
-  min-width: 100%;
+  max-height: 100%;
+  max-width: 100%;
+}
+.house-card__center-block {
+  float: left;
+  width: 600px;
 }
 .house-card__link {
   display: block;
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 21px;
   text-decoration: none;
   color: #000000;
-  margin-bottom: 15px;
-  clear: left;
-  clear: right;
+  margin-bottom: 5px;
 }
 .house-card__link:hover {
   color: #81b3d2;
@@ -934,6 +949,7 @@ body {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  margin-bottom: 14px;
 }
 .btn_more {
   position: relative;
@@ -945,8 +961,8 @@ body {
   line-height: 21px;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 3px 15px;
-  margin-right: 5px;
+  padding: 3px 16px;
+  margin-right: 6px;
 }
 .btn_more:hover {
   background-color: #669ec0;
@@ -965,7 +981,7 @@ body {
   line-height: 21px;
   color: #ffffff;
   background-color: #766357;
-  padding: 3px 15px;
+  padding: 3px 17px;
 }
 .btn_reserve:hover {
   background-color: #604e43;
@@ -980,11 +996,16 @@ body {
   text-align: right;
 }
 .icon-star {
+  display: inline-block;
   color: #81b3d2;
   font-family: "symbols-sedona";
   font-size: 19px;
   line-height: 21px;
   text-transform: uppercase;
+  margin-bottom: 41px;
+}
+.icon-star::before {
+  margin: 0;
 }
 .rating__point-number {
   font-size: 14px;
