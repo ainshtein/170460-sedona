@@ -130,7 +130,6 @@ body {
 }
 .navigation-main__item {
   display: inline-block;
-  //min-width: 200px;
   text-align: center;
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 14px;
