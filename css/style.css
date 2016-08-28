@@ -132,13 +132,13 @@ body {
   text-transform: uppercase;
 }
 .navigation-main__item:nth-child(3n){
-  margin-left: 284px;
+  margin-left: 242px;
 }
 .navigation-main__link {
   display: block;
   color: #000000;
   text-decoration: none;
-  padding: 16px 70px;
+  padding: 14px 73px;
   text-decoration: none;
 }
 .navigation-main__link:hover {
@@ -168,12 +168,12 @@ body {
 .promo::after {
   content: url(../img/logo-shape.png);
   position: absolute;
-  top: 451px;
+  top: 452px;
 }
 .promo__pic {
   width: 458px;
   height: 352px;
-  margin: 76px auto 140px;
+  margin: 75px auto 140px;
 }
 .promo__pic-img {
   display: block;
@@ -189,7 +189,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding: 0 320px;
 }
 .promo__text {
@@ -214,14 +214,14 @@ body {
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 24px;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  width: 400px;
-  margin-top: 50px;
-  margin-bottom: 25px;
+  width: 151px;
+  margin-top: 52px;
+  margin-bottom: 17px;
 }
 .section-features__number {
   color: #ffffff;
@@ -240,13 +240,13 @@ body {
   font-family: "pt_sansregular", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 23px;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  width: 300px;
-  margin-top: 25px;
+  width: 310px;
+  margin-top: 17px;
   margin-bottom: 50px;
 }
 .section-features__pic {
@@ -271,7 +271,7 @@ body {
 .features-block {
   float: left;
   width: 400px;
-  padding: 60px 50px 80px;
+  padding: 60px 50px 69px;
 }
 .features-block__title {
   position: relative;
@@ -284,8 +284,8 @@ body {
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  margin-top: 100px;
-  margin-bottom: 30px;
+  padding-top: 100px;
+  margin-bottom: 8px;
 }
 .features-block__title_ico-house::before {
   content: url(../img/icon-house.png);
@@ -299,7 +299,7 @@ body {
   font-family: "pt_sansregular", Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 26px;
+  line-height: 22px;
   text-transform: uppercase;
   text-align: center;
 }
@@ -327,11 +327,12 @@ body {
   color: #000000;
 }
 .features-block-_without-pic {
-  padding: 50px 60px 60px;
+  padding: 47px 60px 49px;
 }
 .features-block__title_without-pic {
-  margin-top: 0;
-  margin-bottom: 30px;
+  padding-top: 0;
+  margin-bottom: 20px;
+  width: 100px;
 }
 .features-block__number {
   color: #000000;
@@ -355,14 +356,14 @@ body {
 .hotel-search__title {
   color: #000000;
   font-family: 'pt_sansbold', Arial, sans-serif;;
-  font-size: 21px;
+  font-size: 30px;
   font-weight: 700;
   line-height: 21px;
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
   vertical-align: top;
-  margin-top: 50px;
+  margin-top: 57px;
   margin-bottom: 30px;
 }
 .hotel-search__text {
@@ -373,8 +374,8 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
-  width: 450px;
-  margin: 0 auto 50px;
+  width: 396px;
+  margin: 0 auto 44px;
 }
 .btn {
   text-decoration: none;
@@ -385,7 +386,7 @@ body {
   margin: 0 auto;
 }
 .btn_header {
-  display: inline-block;
+  display: block;
   color: white;
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 21px;
@@ -396,11 +397,13 @@ body {
 }
 .hotel-search-form form {
   position: absolute;
-  z-index: 1000;
+  z-index: 100;
+  width: 568px;
   text-align: left;
   background-color: #ffffff;
   color: #000000;
   padding: 50px;
+  //padding: 54px 50px 49px 50px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 }
 .hotel-search-form__label, .hotel-search-form__input,
@@ -416,13 +419,13 @@ body {
   margin-right: 20px;
 }
 .hotel-search-form__input {
-  width: 346px;
+  width: 349px;
   background-color: #f2f2f2;
   border: none;
   outline: none;
   padding: 10px;
   padding-right: 40px;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 .hotel-search-form__input:hover {
   background-color: #ebebeb;
@@ -444,7 +447,7 @@ body {
   line-height: 26px;
   text-transform: uppercase;
   right: 10px;
-  bottom: 40px;
+  bottom: 35px;
 }
 .icon-calendar:hover {
   color: #000000;
@@ -553,17 +556,20 @@ body {
   width: 240px;
 }
 .footer-contacts__link {
+  display: block;
   text-decoration: none;
   font-family: 'pt_sansbold', Arial, sans-serif;;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
   color: #000000;
+  padding-top: 10px;
 }
 .footer-social {
   float: left;
   width: 400px;
-  margin: 0 80px;
+  margin-right: 80px;
+  margin-left: 90px;
   font-size: 0;
 }
 .footer-social__link {
@@ -598,21 +604,25 @@ body {
   float: left;
   width: 240px;
 }
+
 .footer-copyright__link {
   display: block;
   min-height: 39px;
   vertical-align: middle;
   text-align: left;
   text-decoration: none;
-  background: url(../img/copy-logo.png) 120px 0 no-repeat;
+  background: url(../img/copy-logo.png) 101px 0 no-repeat;
 }
 .footer-copyright__link:hover {
-    background: url(../img/copy-logo_hover.png) 120px 0 no-repeat;
+    background: url(../img/copy-logo_hover.png) 101px 0 no-repeat;
 }
 .footer-copyright__link:active {
-    background: url(../img/copy-logo_active.png) 120px 0 no-repeat;
+    background: url(../img/copy-logo_active.png) 101px 0 no-repeat;
 }
 .footer-copyright__text {
+  display: block;
+  padding-top: 10px;
+  padding-left: 10px;
   color: #000000;
   font-family: "pt_sansregular", Arial, sans-serif;
   font-size: 14px;
@@ -985,4 +995,4 @@ body {
   padding: 3px 15px;
 }
 
-/* ----- end page styles hotels.html----- 
+/* ----- end page styles hotels.html----- */
