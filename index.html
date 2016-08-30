@@ -166,5 +166,14 @@
     </section>
   </footer>
 </div>
+<script> 
+  var link = document.querySelector(".btn_header");
+  var popup = document.querySelector("form")
+
+  link.addEventListener("click", function(event){
+    event.preventDefault();
+    popup.classList.toggle("show");
+  });
+</script>
 </body>
 </html>

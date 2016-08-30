@@ -389,7 +389,6 @@ body {
 .hotel-search-form {
   width: 568px;
   margin: 0 auto;
-
 }
 .btn_header {
   display: block;
@@ -410,6 +409,10 @@ body {
   color: #000000;
   padding: 50px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+  display: none;
+}
+.hotel-search-form .show {
+  display: block;
 }
 .hotel-search-form__field {
   position: relative;
