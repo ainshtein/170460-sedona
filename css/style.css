@@ -387,9 +387,9 @@ body {
   text-decoration: none;
 }
 .hotel-search-form {
-  position: relative;
   width: 568px;
   margin: 0 auto;
+  
 }
 .btn_header {
   display: block;
