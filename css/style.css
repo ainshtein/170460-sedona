@@ -169,7 +169,7 @@ body {
   min-height: 508px;
   padding-top: 1px;
   padding-bottom: 1px;
-  background: #ffffff url(../img/bg-logo.jpg) 0 0 no-repeat;
+  background: #ffffff url(../img/bg-promo.jpg) 0 0 no-repeat;
 }
 .promo::after {
   content: url(../img/logo-shape.png);
