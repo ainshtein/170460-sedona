@@ -409,8 +409,12 @@ body {
   background-color: #ffffff;
   color: #000000;
   padding: 50px;
-  //padding: 54px 50px 49px 50px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+.hotel-search-form__field {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: right;
 }
 .hotel-search-form__label, .hotel-search-form__input,
  .counter__label, .counter__input{
@@ -432,7 +436,6 @@ body {
   outline: none;
   padding: 10px;
   padding-right: 40px;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 .hotel-search-form__input:hover {
@@ -442,20 +445,15 @@ body {
   background-color: #ffffff;
   outline: 2px solid #e5e5e5;
 }
-.hotel-search-form__field {
-  position: relative;
-}
 .icon-calendar {
   position: absolute;
   right: 10px;
-  bottom: 40px;
+  bottom: 11px;
   color: #c2c2c2;
   font-family: "symbols-sedona";
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  right: 10px;
-  bottom: 35px;
   cursor: pointer;
 }
 .icon-calendar:hover {
@@ -479,10 +477,10 @@ body {
   cursor: pointer;
 }
 .counter__left .counter__label {
-  margin-right: 40px;
+  margin-right: 45px;
 }
 .counter__right .counter__label {
-  margin-right: 30px;
+  margin-right: 26px;
 }
 .counter__btn {
   width: 38px;
