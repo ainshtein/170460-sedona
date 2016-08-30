@@ -172,7 +172,7 @@ body {
   background: #ffffff url(../img/bg-promo.jpg) 0 0 no-repeat;
 }
 .promo::after {
-  content: url(../img/logo-shape.png);
+  content: url(../img/promo-shape.png);
   position: absolute;
   bottom: 212px;
 }
