@@ -389,7 +389,7 @@ body {
 .hotel-search-form {
   width: 568px;
   margin: 0 auto;
-  
+
 }
 .btn_header {
   display: block;
@@ -536,6 +536,7 @@ body {
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
+  outline: none;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 20px;
