@@ -120,25 +120,25 @@
         <form action="https://echo.htmlacademy.ru" method="post">
           <div class="hotel-search-form__field">
             <label class="hotel-search-form__label" for="date-start-field">Дата заезда:</label>
-            <input class="hotel-search-form__input" type="text" name="date-start" id="date-start-field" maxlength="30">
+            <input class="hotel-search-form__input" type="text" name="date-start" id="date-start-field" maxlength="30" required>
             <span class="icon-calendar"></span>
           </div>
           <div class="hotel-search-form__field">
             <label class="hotel-search-form__label" for="date-finish-field">Дата выезда:</label>
-            <input class="hotel-search-form__input" type="text" name="date-finish" id="date-finish-field" maxlength="30">
+            <input class="hotel-search-form__input" type="text" name="date-finish" id="date-finish-field" maxlength="30" required>
             <span class="icon-calendar"></span>
           </div>
           <div class="counter">
             <div class="counter__left">
               <label class="counter__label" for="people-field">Взрослые:</label>
               <button class="counter__btn" type="button"><span class="icon-minus"></span></button>
-              <input class="counter__input" type="text" name="people" id="people-field" value="2" maxlength="2">
+              <input class="counter__input" tpe="text" name="people" id="people-field" value="2" maxlength="2" required>
               <button class="counter__btn" type="button"><span class="icon-plus"></span></button>
             </div>
             <div class="counter__right">
               <label class="counter__label" for="children-field">Дети:</label>
               <button class="counter__btn" type="button"><span class="icon-minus"></span></button>
-              <input class="counter__input" type="text" name="children" id="children-field" value="0" maxlength="2">
+              <input class="counter__input" type="text" name="children" id="children-field" value="0" maxlength="2" required>
               <button class="counter__btn" type="button"><span class="icon-plus"></span></button>
             </div>
           </div>
@@ -168,11 +168,17 @@
 </div>
 <script> 
   var link = document.querySelector(".btn_header");
-  var popup = document.querySelector("form")
+  var popup = document.querySelector("form");
+  var date = popup.querySelector("[name=date-start]");
 
   link.addEventListener("click", function(event){
     event.preventDefault();
     popup.classList.toggle("show");
+    date.focus();
+  });
+  popup.addEventListener("submit", function(event){
+    event.preventDefault();
+    console.log("Отправка");
   });
 </script>
 </body>
