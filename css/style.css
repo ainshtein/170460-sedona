@@ -174,7 +174,7 @@ body {
 .promo::after {
   content: url(../img/promo-shape.png);
   position: absolute;
-  bottom: 212px;
+  bottom: 211px;
 }
 .promo__pic {
   width: 458px;
@@ -557,10 +557,10 @@ body {
   width: 1200px;
   height: 593px;
 }
-.hotel-search__pic-img {
-  display: block;
-  max-width: 100%;
-  max-height: 100%;
+.yandex-map {
+  width: 1200px;
+  height: 593px;
+  background: url("../img/map.jpg") 0 0 no-repeat;
 }
 .footer-main {
   min-height: 120px;
