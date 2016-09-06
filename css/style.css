@@ -464,38 +464,6 @@ body {
 .counter__left {
   margin-right: 50px;
 }
-/*.counter__left::before {
-  content: "\e802";
-  position: absolute;
-  top: 0;
-  left: 129px;
-  color: #a9a9a9;
-  font-family: "symbols-sedona";
-  font-size: 14px;
-  line-height: 38px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.counter__left::after {
-  content: "\e801";
-  position: absolute;
-  top: 0;
-  left: 205px;
-  color: #a9a9a9;
-  font-family: "symbols-sedona";
-  font-size: 14px;
-  line-height: 38px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-.counter__left:hover::before,
-.counter__left:hover::after {
-  color: #000000;
-}
-.counter__left:active::before,
-.counter__left:active::after {
-  color: #81b3d2;
-}*/
 .counter__label {
   cursor: pointer;
 }
